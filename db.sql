@@ -1,7 +1,45 @@
+/*tietokannan luonti*/
 drop database if exists webshop;
 create database webshop;
 use webshop;
+/*asiakas taulun luonti*/
+drop table if exists customer;
+create table customer (
+id int primary key AUTO_INCREMENT,
+firstname varchar(100) not null,
+lastname varchar(100) not null,
+address varchar(100) not null,
+zip varchar(20) not null,
+city varchar(50) not null
+);
+/*tilaus taulun luonti*/
+drop table if exists `order`;
 
+create table `order` (
+    id int primary key AUTO_INCREMENT,
+    order_date timestamp default CURRENT_TIMESTAMP,
+    customer_id int not null,
+    index customer_id(customer_id),
+    foreign key (customer_id) references customer(id)
+    on delete restrict
+)
+
+/*tilausrivi taulun luonti*/
+drop table if exists order_row;
+
+create table order_row(
+order_id int not null,
+index order_id(order_id),
+foreign key (order_id) REFERENCES `order`(id)
+on delete restrict,
+product_id int not null,
+index product_id(product_id),
+foreign key (product_id) references product(id)
+on delete RESTRICT,
+amount INTEGER
+)
+
+/*Kategoria taulun luonti */
 drop table if exists category;
 create table category (
     id int primary key auto_increment,
@@ -13,7 +51,7 @@ insert into category (name) values ('Tietokoneet');
 insert into category (name) values ('Komponentit');
 insert into category (name) values ('Oheislaitteet');
 insert into category (name) values ('Konsolit');
-
+/*Tuote taulun luonti*/
 drop table if exists product;
 create table product (
     id int PRIMARY key AUTO_INCREMENT,
