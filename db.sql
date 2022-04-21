@@ -67,9 +67,9 @@
 
 
     /*komponentteja tauluun */
-    insert into product (name, price, image, category_id) values ('Nviadia GeForce RTX 2080Ti',999,'RTX 2080TI.png',2);
-    insert into product (name, price, image, category_id) values ('Nviadia GeForce RTX 2080',699,'RTX 2080.jpg',2);
-    insert into product (name, price, image, category_id) values ('Nviadia GeForce GTX 1080Ti',699,'GTX 1080TI.jpg',2);
+    insert into product (name, price, image, category_id) values ('Nvidia GeForce RTX 2080Ti',999,'RTX 2080TI.png',2);
+    insert into product (name, price, image, category_id) values ('Nvidia GeForce RTX 2080',699,'RTX 2080.jpg',2);
+    insert into product (name, price, image, category_id) values ('Nvidia GeForce GTX 1080Ti',699,'GTX 1080TI.jpg',2);
     insert into product (name, price, image, category_id) values ('Nvidia GeForce RTX 2080 AORUS',1500,'aorus gtx 3080.jpg',2);
     insert into product (name, price, image, category_id) values ('AMD Ryzen 5 3600',240,'AMD Ryzen 5 3600.jpg',2);
     insert into product (name, price, image, category_id) values ('Intel i5-9400F',150,'INTEL i5-9400F.jpg',2);
