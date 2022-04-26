@@ -17,7 +17,7 @@ try {
     $db->beginTransaction();
 
     $sql = "insert into customer (firstname,lastname,address,zip,city) values
-    ('".
+    ('" .
     filter_var($fname,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','" .
     filter_var($lname,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','" .
     filter_var($address,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','" .
@@ -32,11 +32,11 @@ $sql = "Insert into `order` (customer_id) values ($customer_id)";
 $order_id = executeInsert($db,$sql);
 
 foreach ($cart as $product) {
-    $sql = "insert into order_row (order_id,product_id,amount) values ("
+    $sql = "insert into order_row (order_id,product_id) values ("
     .
     $order_id . "," .
     $product->id
-    .")";
+    . ")";
     executeInsert($db,$sql);
 }
 

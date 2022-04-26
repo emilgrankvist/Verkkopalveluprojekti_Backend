@@ -78,15 +78,26 @@
     insert into product (name, price, image, category_id) values ('Playstation 5 ohjain',70,'ps5 ohjain.jpg',3);
     insert into product (name, price, image, category_id) values ('Playstation 4 ohjain',55,'PS4 Ohjain.jpg',3);
     insert into product (name, price, image, category_id) values ('Xbox Series X/One ohjain',63,'xbox one ohjain.jpg',3);
-
+    insert into product (name, price, image, category_id) values ('razer kraken kuulokkeet',80,'razer kraken.jpg',3);
+    insert into product (name, price, image, category_id) values ('Langaton toimistohiiri',30,'toimistohiiri.png',3);
+    insert into product (name, price, image, category_id) values ('Pelihiiri',80,'pelihiiri.png',3);
+    insert into product (name, price, image, category_id) values ('Langaton näppäimistö',89,'nappaimisto.png',3);
+    insert into product (name, price, image, category_id) values ('Pelihiiri ja pelinäppäimistö',170,'hiiri+nappaimisto.png',3);
+    
     /*Konsoleita tauluun */
     insert into product (name, price, image, category_id) values ('Sony Playstation 5 + ohjain',530,'PS5 + ohjain.jpg',4);
     insert into product (name, price, image, category_id) values ('Sony Playstation 4 + ohjain',330,'ps4.jpg',4);
     insert into product (name, price, image, category_id) values ('Microsoft Xbox One + ohjain',330,'xbox ONE + ohjain.jpg',4);
     insert into product (name, price, image, category_id) values ('Microsoft Xbox Series X + ohjain',510,'xbox series X.jpg',4);
-    /* 
+    
+    /*Tietokoneita tauluun*/
+    insert into product (name, price, image, category_id) values ('Jomssin kasaama pelitietokone',1500,'Placeholder.png',1);
+    insert into product (name, price, image, category_id) values ('Jomssin kasaama pelitietokone',2000,'Placeholder.png',1);
+    insert into product (name, price, image, category_id) values ('Jomssin kasaama pelitietokone',3000,'Placeholder.png',1);
+    insert into product (name, price, image, category_id) values ('ACER pelitietokone',1500,'Placeholder.png',1);
 
-    TESTIARVOJA
+
+/*    TESTIARVOJA
 
     insert into category (name) values ('Tietokoneet');
     insert into category (name) values ('Komponentit');
