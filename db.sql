@@ -25,6 +25,15 @@
     );
 
 
+    /* Feedback taulun luonti */
+    create table feedback (
+    id int primary key AUTO_INCREMENT,
+    firstname VARCHAR(50),
+    lastname VARCHAR(50),
+    phone VARCHAR(15),
+    email VARCHAR(50),
+    message VARCHAR(255)
+);
 
     /*Kategoria taulun luonti */
     drop table if exists category;
@@ -95,17 +104,3 @@
     insert into product (name, price, image, category_id) values ('Jomssin kasaama pelitietokone',2000,'Placeholder.png',1);
     insert into product (name, price, image, category_id) values ('Jomssin kasaama pelitietokone',3000,'Placeholder.png',1);
     insert into product (name, price, image, category_id) values ('ACER pelitietokone',1500,'Placeholder.png',1);
-
-    
-
-
-/*    TESTIARVOJA
-
-    insert into category (name) values ('Tietokoneet');
-    insert into category (name) values ('Komponentit');
-    insert into category (name) values ('Oheislaitteet');
-
-    insert into product (name, price, category_id) values ('Test computer 1',10,1);
-    insert into product (name, price, category_id) values ('Test computer 2',20,1);
-
-    */
