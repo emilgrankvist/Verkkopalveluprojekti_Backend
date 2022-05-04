@@ -96,6 +96,8 @@
     insert into product (name, price, image, category_id) values ('Jomssin kasaama pelitietokone',3000,'Placeholder.png',1);
     insert into product (name, price, image, category_id) values ('ACER pelitietokone',1500,'Placeholder.png',1);
 
+    
+
 
 /*    TESTIARVOJA
 

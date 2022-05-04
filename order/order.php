@@ -8,7 +8,7 @@ $input = json_decode(file_get_contents('php://input'));
 $fname = filter_var($input->firstname,FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $lname = filter_var($input->lastname,FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $address = filter_var($input->address,FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$zip = filter_var($input->zip,FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$zip = filter_var($input->zip,FILTER_SANITIZE_NUMBER_INT);
 $city = filter_var($input->city,FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $cart = $input->cart;
 
@@ -21,7 +21,7 @@ try {
     filter_var($fname,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','" .
     filter_var($lname,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','" .
     filter_var($address,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','" .
-    filter_var($zip,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','" .
+    filter_var($zip,FILTER_SANITIZE_NUMBER_INT) . "','" .
     filter_var($city,FILTER_SANITIZE_FULL_SPECIAL_CHARS)
 . "')";
 
