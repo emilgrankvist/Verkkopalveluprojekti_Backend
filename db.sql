@@ -33,7 +33,7 @@
     phone VARCHAR(15),
     email VARCHAR(50),
     message VARCHAR(255)
-)
+);
 
     /*Kategoria taulun luonti */
     drop table if exists category;
