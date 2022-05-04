@@ -25,6 +25,15 @@
     );
 
 
+    /* Feedback taulun luonti */
+    create table feedback (
+    id int primary key AUTO_INCREMENT,
+    firstname VARCHAR(50),
+    lastname VARCHAR(50),
+    phone VARCHAR(15),
+    email VARCHAR(50),
+    message VARCHAR(255)
+)
 
     /*Kategoria taulun luonti */
     drop table if exists category;
