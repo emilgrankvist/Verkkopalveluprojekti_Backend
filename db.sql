@@ -95,15 +95,3 @@
     insert into product (name, price, image, category_id) values ('Jomssin kasaama pelitietokone',2000,'Placeholder.png',1);
     insert into product (name, price, image, category_id) values ('Jomssin kasaama pelitietokone',3000,'Placeholder.png',1);
     insert into product (name, price, image, category_id) values ('ACER pelitietokone',1500,'Placeholder.png',1);
-
-
-/*    TESTIARVOJA
-
-    insert into category (name) values ('Tietokoneet');
-    insert into category (name) values ('Komponentit');
-    insert into category (name) values ('Oheislaitteet');
-
-    insert into product (name, price, category_id) values ('Test computer 1',10,1);
-    insert into product (name, price, category_id) values ('Test computer 2',20,1);
-
-    */
